@@ -15,6 +15,9 @@ else:
 def hello_world():
     return 'Hello, Docker!'
 
+@app.route('/sayhello')
+def say_hello():
+    return 'Hello, world!'
 
 @app.route('/widgets')
 def get_widgets():
