@@ -19,6 +19,10 @@ def hello_world():
 def say_hello():
     return 'Hello, world!'
 
+@app.route('/saygoodbye')
+def say_hello():
+    return 'Goodbye, world!'
+
 @app.route('/widgets')
 def get_widgets():
     with psycopg2.connect(host="db", user="postgres", password=password, database="example") as conn:
